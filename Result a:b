@@ -1,0 +1,26 @@
+/**
+ * Created by gerganastoeva on 7/14/17.
+ */
+public class Main {
+    public static void main(String[] args) {
+        int a = 25;
+        double b = 4;
+        double result = a / b;
+        System.out.println(result);
+    }
+}
+
+
+
+
+
+/**
+ * Created by gerganastoeva on 7/14/17.
+ */
+public class Main {
+    public static void main(String[] args) {
+        int a = 25
+        double result = a / 4.0;
+        System.out.println(result);
+    }
+}
