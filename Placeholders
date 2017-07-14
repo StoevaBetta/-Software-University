@@ -10,7 +10,7 @@ public class Main {
         String lastName = console.nextLine();
         int age = Integer.parseInt(console.nextLine());
         String town = console.nextLine();
-        System.out.printf("You are %s %s, a %d-years old person from %s", firstName, lastName, age, town);
+        System.out.printf("You are %s %s, a %d-years old person from %s.", firstName, lastName, age, town);
         
     }
 }
