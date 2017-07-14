@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+/**
+ * Created by gerganastoeva on 7/14/17.
+ */
+public class Main {
+    public static void main(String[] args) {
+        Scanner console = new Scanner (System.in);
+        double number = 4.238248;
+        System.out.printf("Rounded number %.2f", number);
+    }
+}
