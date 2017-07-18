@@ -3,6 +3,7 @@ import java.util.Scanner;
 /**
  * Created by gerganastoeva on 7/14/17.
  */
+ 
 public class Main {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
@@ -14,11 +15,8 @@ public class Main {
         double width = Math.abs(x2 - x1);
         double height = Math.abs(y1 - y2);
 
-        System.out.println(width * height);
-        System.out.println(2 * width + 2 * height);
-
-
-
+        System.out.printf("Area = %.2f%n", width * height);
+        System.out.printf("Perimeter = %.2f", 2 * width + 2 * height);
     }
 }
 
