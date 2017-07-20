@@ -15,3 +15,29 @@ public class Main {
         }
     }
 }
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+/**
+ * Created by gerganastoeva on 7/20/17.
+ */
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Double grade = Double.parseDouble(sc.nextLine());
+
+        if (grade >= 5.50) {
+            System.out.println("Excellent!");
+        } else{
+            System.out.println("Not Excellent");
+
+        }
+
+    }
+}
