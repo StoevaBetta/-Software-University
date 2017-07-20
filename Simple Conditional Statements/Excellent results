@@ -11,7 +11,6 @@ public class Main {
         Double grade = Double.parseDouble(sc.nextLine());
 
         if (grade >= 5.50){
-        
             System.out.println("Excellent!");
         }
     }
