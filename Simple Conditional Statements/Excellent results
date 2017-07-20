@@ -3,8 +3,9 @@ import java.util.Scanner;
 /**
  * Created by gerganastoeva on 7/20/2017.
  */
- 
- 
+
+
+
 public class ExcellentResult {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -12,31 +13,7 @@ public class ExcellentResult {
         double grade = Double.parseDouble(sc.nextLine());
 
         if(grade>=5.50) {
-            System.out.println("Excellent!");          // output true
+            System.out.println("Excellent!");
         }
     }
 }
-
-
-
-
-
-
-mport java.util.Scanner;
-
-/**
- * Created by gerganastoeva on 7/20/17.
- */
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner (System.in);
-        String a = sc.nextLine();
-        String b = sc.nextLine();
-        System.out.println(a == b);                // output false
-    }
-}
-
-
-
-
-
