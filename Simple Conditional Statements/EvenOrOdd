@@ -1,22 +1,19 @@
-import java.util.Scanner;
+Import java.util.Scanner;
 
 /**
- * Created by gerganastoeva on 7/21/2017.
+ * Created by gerganastoeva on 7/20/17.
  */
- 
  
 public class EvenOrOdd {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int number = Integer.parseInt(sc.nextLine());
 
-        int num = Integer.parseInt(sc.nextLine());
-
-        boolean even = num%2==0;
-
-        if(even) {
+        if (number % 2 == 0) {
             System.out.println("even");
-        }else {
+        } else {
             System.out.println("odd");
         }
     }
 }
+
