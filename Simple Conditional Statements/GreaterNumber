@@ -3,8 +3,7 @@ import java.util.Scanner;
 /**
  * Created by gerganastoeva on 7/21/2017.
  */
- 
- 
+  
  
 public class GreaterNumber {
     public static void main(String[] args) {
@@ -20,3 +19,26 @@ public class GreaterNumber {
         }
     }
 }
+
+
+
+
+import java.util.Scanner;
+
+/**
+ * Created by gerganastoeva on 7/20/17.
+ */
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number1 = Integer.parseInt(sc.nextLine());
+        int number2 = Integer.parseInt(sc.nextLine());
+
+        if (number1 > number2) {
+            System.out.println("Greater number: " + number1);
+        } else {
+            System.out.println("Greater number:" + number2);
+        }
+    }
+}
+
