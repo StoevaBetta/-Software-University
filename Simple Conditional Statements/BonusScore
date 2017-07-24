@@ -20,9 +20,11 @@ public class Main {
     }
         if (points %10 == 5){
             bonus = bonus + 2;
-        }else{
+        }
+        if (points %2 == 0){
             bonus = bonus + 1;
         }
+        System.out.println(bonus));
         System.out.println("Total points: " + (points + bonus));
 
         }
