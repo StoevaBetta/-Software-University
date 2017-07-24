@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Created by gerganastoeva on 7/20/17.
  */
-public class Main {
+public class BonusScore {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int points = Integer.parseInt(sc.nextLine());
