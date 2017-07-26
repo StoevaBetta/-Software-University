@@ -28,7 +28,7 @@ public class Main {
             } else if (town.equals("Plovdiv")) {
                 System.out.println(0.70 * quantity);
             } else if (town.equals("Varna")) {
-                System.out.println(0.75 * quantity);
+                System.out.println(0.70 * quantity);
             }
         }
         if (product.equals("beer")) {
@@ -60,3 +60,4 @@ public class Main {
         }
     }
 }
+
