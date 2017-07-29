@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+/**
+ * Created by gerganastoeva on 7/20/17.
+ */
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean result = 5 > 4;  //brake point;  true
+        boolean a = true;
+        boolean b = false;
+        boolean c = false;
+        System.out.println(a || b && c);
+    }
+}
