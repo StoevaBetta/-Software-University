@@ -1,0 +1,85 @@
+import java.util.Scanner;
+
+/**
+ * Created by gerganastoeva on 7/20/17.
+ */
+
+public class FruitShop {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+       String fruit = scanner.nextLine();
+       String day = scanner.nextLine().toLowerCase();
+       Double quantity = Double.parseDouble(scanner.nextLine());
+       Double price = 0.0;
+
+       switch (day) {
+           case "monday":
+           case "tuesday":
+           case "wednesday":
+           case "thursday":
+           case "friday":
+               if (fruit.equals("banana")) {
+                   price = 2.50;
+                   System.out.println(quantity * price);
+               } else if (fruit.equals("apple")) {
+                   price = 1.20;
+                   System.out.println(quantity * price);
+               } else if (fruit.equals("orange")) {
+                   price = 0.85;
+                   System.out.println(quantity * price);
+               } else if (fruit.equals("grapefruit")) {
+                   price = 1.45;
+                   System.out.println(quantity * price);
+               } else if (fruit.equals("kiwi")) {
+                   price = 2.70;
+                   System.out.println(quantity * price);
+               } else if (fruit.equals("pineapple")) {
+                   price = 5.50;
+                   System.out.println(quantity * price);
+               } else if (fruit.equals("grapes")) {
+                   price = 3.85;
+                   System.out.println(quantity * price);
+               }else{
+                   System.out.println("error");
+               }
+
+               break;
+
+
+       }
+        switch (day) {
+            case "saturday":
+            case "sunday":
+                if (fruit.equals("banana")) {
+                    price = 2.70;
+                    System.out.println(quantity * price);
+                } else if (fruit.equals("apple")) {
+                    price = 1.25;
+                    System.out.println(quantity * price);
+                } else if (fruit.equals("orange")) {
+                    price = 0.90;
+                    System.out.println(quantity * price);
+                } else if (fruit.equals("grapefruit")) {
+                    price = 1.60;
+                    System.out.println(quantity * price);
+                } else if (fruit.equals("kiwi")) {
+                    price = 3.00;
+                    System.out.println(quantity * price);
+                } else if (fruit.equals("pineapple")) {
+                    price = 5.60;
+                    System.out.println(quantity * price);
+                } else if (fruit.equals("grapes")) {
+                    price = 4.20;
+                    System.out.println(quantity * price);
+                }else{
+                    System.out.println("error");
+                }
+                break;
+            default:
+                System.out.println("error");
+
+        }
+        }
+    }
