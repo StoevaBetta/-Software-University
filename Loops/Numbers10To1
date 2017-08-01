@@ -5,11 +5,11 @@ import java.util.Scanner;
  */
 
 
-class ForLoopExample {
+class Numbers10To1 {
     public static void main(String args[]){
          Scanner scanner = new Scanner(System.in);
          
-         for(int i=10; i>1; i--){
+         for(int i = 10; i >= 1; i--){
               System.out.println("The value of i is: "+i);
          }
     }
