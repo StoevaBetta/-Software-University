@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+/**
+ * Created by gerganastoeva on 7/20/17.
+ */
+
+public class AtoZalphabet {
+    public static void main(String[] args) {                      // use ASCII table
+        Scanner scanner = new Scanner(System.in);
+
+        for (char letter = 'a'; letter <= 'z'; letter++) {
+            System.out.println(letter);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+/**
+ * Created by gerganastoeva on 7/20/17.
+ */
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        for (char letter = 'a'; letter <= 'z'; letter++) {
+            System.out.println((int)letter);                    // values of character
+        }
+    }
+}
+
