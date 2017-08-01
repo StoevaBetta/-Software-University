@@ -15,7 +15,7 @@ class SumOfnumbersN {
 
         for (int i = 0; i < n; i++) {                                   //(int i = 1; i <= n; i++)
             int currentNum = Integer.parseInt(scanner.nextLine());
-            sum += currentNum;
+            sum += currentNum;                                          // sum = sum + currentNum;
         }
         System.out.println(sum);
     }
