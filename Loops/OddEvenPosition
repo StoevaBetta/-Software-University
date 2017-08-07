@@ -1,66 +1,78 @@
 import java.util.Scanner;
- 
+
 /**
- * Created by gerganastoeva on 08/07/2017.
+ * Created by gerganastoeva on 8/07/2017.
  */
  
  
-public class OddEvenPosition {
+public class OddAndEventPosition {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+
+        
+        double oddMinn = 1000000000.0;
+        double oddMaxx = -1000000000.0;
+        double evenMinn = 1000000000.0;
+        double evenMaxx = -1000000000.0;
+        double oddSum = 0;
+        double evenSum = 0;
         int n = Integer.parseInt(scanner.nextLine());
- 
-        double maxOdd = -1000000000.0;
-        double minOdd = 1000000000.0;
-        double maxEven = -1000000000.0;
-        double minEven = 1000000000.0;
-        double sumOdd = 0.0;
-        double sumEven = 0.0;
- 
-        for (int i = 1; i <= n; i++) {
-            double num = Double.parseDouble(scanner.nextLine());
-            if (i % 2 == 0) {
-                sumEven += num;
-                if (maxEven < num) {
-                    maxEven = num;
+
+
+
+        for(int i=1; i<=n; i++) {
+            double current = Double.parseDouble(scanner.nextLine());
+            if(i%2==0) {
+                if(current > evenMaxx) {
+                    evenMaxx = j;
+                }else if(current < evenMinn) {
+                    evenMinn = current;
                 }
-                if (minEven>num){
-                    minEven=num;
+                evenSum += currenr;
+            }else {
+                if(current > oddMaxx) {
+                    oddMaxx = current;
+                }else if(current < oddMinn) {
+                    oddMinn = current;
                 }
- 
-            }else{
-                sumOdd += num;
-                if (maxOdd < num) {
-                    maxOdd = num;
-                }
-                if (minOdd>num){
-                    minOdd=num;
-                }
+                oddSum += current;
             }
         }
-        System.out.printf("OddSum = %f,%n", sumOdd);
- 
-            if (minOdd == 1000000000.0){
-                System.out.printf("OddMin = No,&n");
-            }else{
-                System.out.printf("OddMin = %f,%n", minOdd);
-            }
-             if (maxOdd == -1000000000.0){
-                 System.out.printf("OddMax = No,%n");
-             }else{
-                 System.out.printf("OddMax = %f,%n", maxOdd);
+
+        System.out.print("OddSum="+oddSum);
+
+
+        if(oddMinn==1000000000.0) {
+            System.out.print(",OddMin=No");
+        }else {
+            double oddMin = oddMinn;
+            System.out.print(",OddMin=" + oddMin);
         }
-        System.out.printf("EvenSum = %f,%n", sumEven);
-        if (minEven == 1000000000.0){
-            System.out.printf("EvenMin = No,%n");
-        }else{
-            System.out.printf("EvenMin = %f,%n", minEven);
+
+        if(oddMaxx==-1000000000.0) {
+            System.out.print(",OddMax=No");
+
+        }else {
+            double oddMax = oddMaxx;
+            System.out.print(",OddMax=" + oddMax);
         }
-        if (maxEven == -1000000000.0){
-            System.out.printf("EvenMax = No");
-        }else{
-            System.out.printf("EvenMax = %f", maxEven);
+
+        System.out.print(",EvenSum="+evenSum);
+
+        if(evenMinn==1000000000.0) {
+            System.out.print(",EvenMin=No");
+        }else {
+            double evenMin = evenMinn;
+            System.out.print(",EvenMin="+evenMin);
         }
- 
+        if(evenMaxx==-1000000000.0) {
+            System.out.print(",EvenMax=No");
+        }else {
+            double evenMax = evenMaxx;
+            System.out.print(",EvenMax="+evenMax);
+        }
+
+
     }
 }
