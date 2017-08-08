@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+/**
+ * Created by gerganastoeva on 8/2/17.
+ */
+ 
+public class RectangleOf10x10Stars {
+    public static void main(String[] args) {
+
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        for (int row = 1; row <= 10; row++) {
+            System.out.println(repeatStr("*", 10));
+
+        }
+    }
+
+        static String repeatStr(String str, int count){        //method repeatStr
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < count; i++){
+            sb.append(str);
+        }
+        return sb.toString();
+        }
+
+
+}
+
