@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[]args){
+    Scanner scanner = new Scanner(System.in);
+
+    String name = scanner.nextLine();
+    
+    while (name.equals("Savina")){
+        System.out.println(name);
+        name = scanner.nextLine();
+    }
+
+}
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String name = scanner.nextLine();
+        boolean isSavina = name.equals("Savina");  // check if the name is Savina
+
+
+        while (isSavina) {
+            System.out.println(name);           // if result from boolean is true, than print the name
+            name = scanner.nextLine();        //print the next input
+            isSavina = name.equals("Savina");     // check if the name is Savina, if so print the name
+        }
+
+    }
+}
+
+
+
